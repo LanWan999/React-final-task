@@ -1,0 +1,15 @@
+.photo-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.photo-card img{
+    width: 200px;
+    border-radius: 10px;
+}
+
+.comment-list {
+    display: flex;
+    gap: 20px;
+}

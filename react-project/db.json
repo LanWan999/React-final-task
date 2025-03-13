@@ -1,0 +1,139 @@
+{
+  "photos": [
+    {
+      "id": "1",
+      "image": "/assets/Daisy.jpeg",
+      "name": "Daisy",
+      "description": "Daisy is a friendly and laid-back capybara with a gentle nature. Her soft, brown fur and big, soulful eyes make her instantly lovable. Daisy enjoys lounging by the water, often seen soaking up the sun or happily wading in shallow streams."
+    },
+    {
+      "id": "2",
+      "image": "/assets/Flint.jpg",
+      "name": "Flint",
+      "description": "Flint is an adventurous and spirited capybara with a bold streak. His sleek, dark brown fur and bright, curious eyes make him stand out in any crowd. Always on the move, Flint loves to explore new places, whether it’s navigating through dense grass or splashing around in the water."
+    },
+    {
+      "id": "3",
+      "image": "/assets/Haku.jpg",
+      "name": "Haku",
+      "description": "Haku is a gentle and curious capybara with a soft, chocolate-brown coat and a calm demeanor. Haku enjoys lounging by the water, nibbling on fresh grass, and occasionally soaking up the sun with his animal friends."
+    },
+    {
+      "id": "4",
+      "image": "/assets/Lily.jpg",
+      "name": "Lily",
+      "description": "Haku is a gentle and curious capybara with a soft, chocolate-brown coat and a calm demeanor. Always seen lounging by the water or strolling through the grass, Haku enjoys the company of friends and is particularly fond of basking in the sun."
+    }
+  ],
+  "desserts": [
+    {
+      "id": "1",
+      "image": "",
+      "name": "",
+      "price": 3,
+      "description": ""
+    },
+    {
+      "id": "2",
+      "image": "",
+      "name": "",
+      "price": 3,
+      "description": ""
+    }
+  ],
+  "drinks": [
+    {
+      "id": "1",
+      "image": "",
+      "name": "",
+      "price": 3,
+      "description": ""
+    },
+    {
+      "id": "2",
+      "image": "",
+      "name": "",
+      "price": 3,
+      "description": ""
+    }
+  ],
+  "plushies": [
+    {
+      "plushyId": "1",
+      "name": "Capybara Toast",
+      "image": "/assets/plushyToastCapybara.jpg",
+      "price": 13,
+      "stock": 5
+    },
+    {
+      "plushyId": "2",
+      "name": "Capybara Rabbit",
+      "image": "/assets/plushyRabbitCapybara.webp",
+      "price": 18,
+      "stock": 6
+    },
+    {
+      "plushyId": "3",
+      "name": "Capybara with a Duck Floaty",
+      "image": "/assets/plushyDuckCapybara.jpg",
+      "price": 14,
+      "stock": 3
+    },
+    {
+      "plushyId": "4",
+      "name": "Capybara with a Tulip",
+      "image": "/assets/plushyTulipCapybara.webp",
+      "price": 13,
+      "stock": 4
+    }
+  ],
+  "stickers": [
+    {
+      "stickerId": "1",
+      "name": "Chill capibara",
+      "image": "/assets/capybaraStickerLeaves.webp",
+      "price": 3,
+      "stock": 12
+    },
+    {
+      "stickerId": "2",
+      "name": "Capybara relaxing in a tub",
+      "image": "/assets/capybaraStickerTub.jpg",
+      "price": 5,
+      "stock": 26
+    },
+    {
+      "stickerId": "3",
+      "name": "Capybara with bubble tea",
+      "image": "/assets/capybaraStickerBubbletea.webp",
+      "price": 3,
+      "stock": 8
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "username": "dan001",
+      "body": "Best purchase ever!!!",
+      "rating": "10/10"
+    },
+    {
+      "id": "2",
+      "username": "roseNail01",
+      "body": "Very fast shipping",
+      "rating": "9/10"
+    },
+    {
+      "username": "Carl101",
+      "body": "Cute designs.",
+      "rating": "10/10",
+      "id": "sYYnhDg"
+    },
+    {
+      "username": "SlowPoke91",
+      "body": "Good selection.",
+      "rating": "8/10",
+      "id": "re8bL6n"
+    }
+  ]
+}
