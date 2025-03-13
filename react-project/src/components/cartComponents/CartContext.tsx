@@ -3,6 +3,7 @@ import { Action, CartProduct, cartReducer } from "./CartReducer"
 import { ActionTypes } from "./CartReducer"
 import React from "react"
 import { Product } from "./CartReducer"
+import { useEffect } from "react"
 
 const cartInitialState: CartState = {
     cart: [],  
@@ -18,6 +19,7 @@ interface CartPageContextType extends CartState {
     removeProduct: (id : Product['id']) => void
     update: (id : Product['id'], quantity: number) => void
     clear: () => void
+    dispatch: React.Dispatch<Action>
 }
 
 
@@ -29,11 +31,26 @@ type CartPageContextProviderProps = {
 
 export const CartPageContextProvider: React.FC<CartPageContextProviderProps> = ({ children }) => {
 
-    const [state, dispatch] = useReducer(cartReducer,  cartInitialState)
+    const loadCartFromLocalStorage = (): CartProduct[] => {
+        const savedCart = localStorage.getItem("cart");
+        return savedCart ? JSON.parse(savedCart) : [];
+    };
+
+    const [state, dispatch] = useReducer(cartReducer, { cart: loadCartFromLocalStorage() })
     const { cart } = state
 
+    useEffect(() => {
+        if (cart.length > 0) {
+            localStorage.setItem("cart", JSON.stringify(cart));
+        }
+    }, [cart]);
+
     const addProduct = (product: Product) => {
-        const cartProduct: CartProduct = { ...product, quantity: 1}
+        const cartProduct: CartProduct = {
+            ...product,
+            quantity: 1
+        }
+        console.log("Adding product to cart", cartProduct)
         dispatch({type: ActionTypes.ADD_ITEM, payload: cartProduct})
     }
     
@@ -53,6 +70,7 @@ export const CartPageContextProvider: React.FC<CartPageContextProviderProps> = (
         removeProduct,
         update,
         clear,
+        dispatch
     }
 
     return (

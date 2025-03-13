@@ -81,6 +81,11 @@ const MerchList = () => {
         addProduct(cartProduct)
     }
 
+    const handleAddToCart = (product: Plushy | Sticker) => {
+        console.log("Adding product to cart:", product); 
+        addToCartHandler(product);  
+    };
+
     return(
         <div>
             <h1>Plushies</h1>
@@ -93,7 +98,7 @@ const MerchList = () => {
                                 <div>{plushy.name}</div>
                                 <div>{plushy.price} €</div>
                                 <div>In stock {plushy.stock}</div>
-                                <button onClick={() => addToCartHandler(plushy)}>Add to Cart</button>
+                                <button onClick={() => handleAddToCart(plushy)}>Add to Cart</button>
                             </div>
                         ))}
                     </div>
@@ -109,7 +114,7 @@ const MerchList = () => {
                                 <div>{sticker.name}</div>
                                 <div>{sticker.price} €</div>
                                 <div>In stock {sticker.stock}</div>
-                                <button onClick={() => addToCartHandler(sticker)}>Add to Cart</button>
+                                <button onClick={() => handleAddToCart(sticker)}>Add to Cart</button>
                             </li>
                         ))}
                     </ul>

@@ -39,6 +39,8 @@ export const cartReducer = (state: CartState, action: Action): CartState => {
             if (existingItem) {
                 const updatedCart = state.cart.map(item => item.id === id ? { ...item, quantity: item.quantity + 1 } : item)
 
+                console.log("Updated cart with existing item", updatedCart)
+
                 return {
                     ...state,
                     cart: updatedCart
@@ -46,6 +48,7 @@ export const cartReducer = (state: CartState, action: Action): CartState => {
             }else {
                 const updatedProduct: CartProduct = { ...newProduct, quantity: 1 }
                 const updatedCart = [...state.cart, updatedProduct]
+                console.log("Updated cart with new item", updatedCart)
                 return {
                     ...state,
                     cart: updatedCart

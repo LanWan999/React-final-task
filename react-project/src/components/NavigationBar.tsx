@@ -17,10 +17,10 @@ const NavigationBar = () => {
                             <NavLink className='nav-link' to="/project/merch" end>Merch</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className='nav-link' to="/project/gallery" end>Gallery</NavLink>
+                            <NavLink className='nav-link' to="/project/capybaras" end>Capibara Gallery</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink className='nav-link' to="/project/contacts" end>Contacts</NavLink>
+                            <NavLink className='nav-link' to="/project/comments" end>Comments</NavLink>
                         </li>
                     </ul>
                 </div>

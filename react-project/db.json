@@ -1,10 +1,10 @@
 {
-  "photos": [
+  "capybaras": [
     {
-      "id": "1",
-      "image": "/assets/Daisy.jpeg",
+      "image": "https://th-thumbnailer.cdn-si-edu.com/51G4EYUWyCjjpDHcBEMw_77Dcew=/800x800/filters:focal(1024x683:1025x684)/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer_public/26/50/265014eb-845b-42b7-ab11-4c2588cccf31/capybara_cinnamon.jpg",
       "name": "Daisy",
-      "description": "Daisy is a friendly and laid-back capybara with a gentle nature. Her soft, brown fur and big, soulful eyes make her instantly lovable. Daisy enjoys lounging by the water, often seen soaking up the sun or happily wading in shallow streams."
+      "description": "Daisy is a friendly and laid-back capybara with a gentle nature. Her soft, brown fur and big, soulful eyes make her instantly lovable. Daisy enjoys lounging by the water, often seen soaking up the sun or happily wading in shallow streams.",
+      "id": "1"
     },
     {
       "id": "2",
@@ -22,65 +22,71 @@
       "id": "4",
       "image": "/assets/Lily.jpg",
       "name": "Lily",
-      "description": "Haku is a gentle and curious capybara with a soft, chocolate-brown coat and a calm demeanor. Always seen lounging by the water or strolling through the grass, Haku enjoys the company of friends and is particularly fond of basking in the sun."
+      "description": "Lily is a gentle and curious capybara with a soft, chocolate-brown coat and a calm demeanor. Always seen lounging by the water or strolling through the grass, Lily enjoys the company of friends and is particularly fond of basking in the sun."
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV7AYob41moDyTxv7zBZSiLCNEr1wggCd_cQ&s",
+      "name": "Peachy",
+      "description": "Test 1",
+      "id": "QBRC3jn"
     }
   ],
   "desserts": [
     {
-      "id": "1",
-      "image": "",
-      "name": "",
-      "price": 3,
-      "description": ""
+      "image": "/assets/sorbey.jpg",
+      "name": "Strawberry Milkshake",
+      "price": 4,
+      "description": "Dessert 1",
+      "id": "1"
     },
     {
-      "id": "2",
-      "image": "",
-      "name": "",
-      "price": 3,
-      "description": ""
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qFJ-Hrl6oQlLCfM-5Xe8cewwliLYG5F0sw&s",
+      "name": "Waffles",
+      "price": 6,
+      "description": "Waffles with Berries",
+      "id": "1741890190793"
     }
   ],
   "drinks": [
     {
       "id": "1",
-      "image": "",
-      "name": "",
-      "price": 3,
-      "description": ""
+      "image": "/assets/lemonade.jpg",
+      "name": "Lemonade",
+      "price": 2,
+      "description": "Drink 1"
     },
     {
       "id": "2",
-      "image": "",
-      "name": "",
+      "image": "/assets/tea.webp",
+      "name": "Black Tea",
       "price": 3,
-      "description": ""
+      "description": "Drink 2"
     }
   ],
   "plushies": [
     {
-      "plushyId": "1",
+      "id": "1",
       "name": "Capybara Toast",
       "image": "/assets/plushyToastCapybara.jpg",
       "price": 13,
       "stock": 5
     },
     {
-      "plushyId": "2",
+      "id": "2",
       "name": "Capybara Rabbit",
       "image": "/assets/plushyRabbitCapybara.webp",
       "price": 18,
       "stock": 6
     },
     {
-      "plushyId": "3",
+      "id": "3",
       "name": "Capybara with a Duck Floaty",
       "image": "/assets/plushyDuckCapybara.jpg",
       "price": 14,
       "stock": 3
     },
     {
-      "plushyId": "4",
+      "id": "4",
       "name": "Capybara with a Tulip",
       "image": "/assets/plushyTulipCapybara.webp",
       "price": 13,
@@ -89,28 +95,28 @@
   ],
   "stickers": [
     {
-      "stickerId": "1",
+      "id": "1",
       "name": "Chill capibara",
       "image": "/assets/capybaraStickerLeaves.webp",
       "price": 3,
       "stock": 12
     },
     {
-      "stickerId": "2",
+      "id": "2",
       "name": "Capybara relaxing in a tub",
       "image": "/assets/capybaraStickerTub.jpg",
       "price": 5,
       "stock": 26
     },
     {
-      "stickerId": "3",
+      "id": "3",
       "name": "Capybara with bubble tea",
       "image": "/assets/capybaraStickerBubbletea.webp",
       "price": 3,
       "stock": 8
     }
   ],
-  "comments": [
+  "reviews": [
     {
       "id": "1",
       "username": "dan001",
@@ -133,6 +139,42 @@
       "username": "SlowPoke91",
       "body": "Good selection.",
       "rating": "8/10",
+      "id": "re8bL6n"
+    },
+    {
+      "username": "DanBanan",
+      "body": "Good quality, good material",
+      "rating": "9/10",
+      "id": "H9IWTaH"
+    }
+  ],
+  "comments": [
+    {
+      "capybaraId": "1",
+      "id": "1",
+      "username": "dan001",
+      "body": "Daisy the capybara was an absolute delight!",
+      "date": "2024.12.01"
+    },
+    {
+      "capybaraId": "2",
+      "id": "2",
+      "username": "roseNail01",
+      "body": "I had the absolute pleasure of meeting Flint the capybara, and let me tell you, he’s a total gem! ",
+      "date": "2024.06.15"
+    },
+    {
+      "capybaraId": "3",
+      "username": "Carl101",
+      "body": "Meeting Haku the capybara was an experience I’ll never forget! From the moment I laid eyes on him, his serene presence instantly made me feel at peace.",
+      "date": "2024.03.30",
+      "id": "sYYnhDg"
+    },
+    {
+      "capybaraId": "4",
+      "username": "SlowPoke91",
+      "body": "Lily the baby capybara is an absolute bundle of joy! Despite being a little ball of energy, she’s super friendly ",
+      "date": "2024.01.12",
       "id": "re8bL6n"
     }
   ]

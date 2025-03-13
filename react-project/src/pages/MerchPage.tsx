@@ -1,8 +1,7 @@
 import React from 'react'
 import MerchList from '../components/MerchList'
-import CommentForm from '../components/CommentForm'
-import CommentsList from '../components/CommentsList'
-import { CartPageContextProvider } from '../components/cartComponents/CartContext'
+import ReviewForm from '../components/ReviewForm'
+import ReviewsList from '../components/ReviewsList'
 import NavigationBar from '../components/NavigationBar'
 
 
@@ -11,16 +10,14 @@ const MerchPage = () => {
         <div>
             <NavigationBar/>
             <h1>Merch</h1>
-            <CartPageContextProvider>
                 <MerchList />
-            </CartPageContextProvider>
             <div>
                 <h3>Reviews</h3>
-                <CommentsList />
+                <ReviewsList />
             </div>
             <div>
-                <h3>Leave a comment!</h3>
-                <CommentForm />
+                <h3>Leave a review!</h3>
+                <ReviewForm />
             </div>
             
         </div>
