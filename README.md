@@ -1,4 +1,4 @@
-1. The name of the project is Capybaras & Desserts. It is a small project created with React to imitate a cafe website.
+The name of the project is Capybaras & Desserts. It is a small project created with React to imitate a cafe website.
 
 In the project, in order to use various methods of displaying, creating, deleting and editing information a free fake API was used for testing and prototyping. Link: https://jsonplaceholder.typicode.com
 The given information in db.json was created from scratch to see and test the extencity of the API.
