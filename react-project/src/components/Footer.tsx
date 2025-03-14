@@ -12,8 +12,8 @@ const Footer = () => {
             <div>
                 <div>
                     <div><NavLink className='nav-link' to="/project/home" end>About Us</NavLink></div>
-                    <div><a href="#">What We Do</a></div>
-                    <div><a href="#">Contacts</a></div>
+                    <div><NavLink className='nav-link' to="/project/capybaras" end>Gallery</NavLink></div>
+                    <div><NavLink className='nav-link' to="/project/home" end>Contacts</NavLink></div>
                 </div>
             </div>
             <div>
@@ -21,6 +21,7 @@ const Footer = () => {
                     <p className="copyright">© Copyright 2024 Desserts & Capybaras. All rights reserved.</p>
                 </div>
             </div>
+
         </FooterStyle>
     )
 }

@@ -35,3 +35,25 @@
     border-radius: 6px;
     font-size: 15px;
 }
+
+.cart-item-card {
+    border: 1px solid rgb(70, 56, 17);
+    padding: 50px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .photo-card,
+    .review-list {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 550px) {
+    .review-list {
+        display: flex;
+        flex-direction: column;
+    }
+}

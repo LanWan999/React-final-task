@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from 'react'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios'
 import { API_URL } from "../../config"
 import { useCart } from './cartComponents/CartContext'
 import styled from 'styled-components'
+
 
 const Button = styled.button`
   color: #6d4d10;
@@ -13,11 +16,11 @@ const Button = styled.button`
   border-radius: 3px;
 `;
 
-
 const Title = styled.h1`
   font-size: 30px;
   color: #574631;
 `;
+
 
 type Plushy = {
     plushyId: string
@@ -38,6 +41,17 @@ type Sticker = {
 }
 
 const MerchList = () => {
+
+    const notify = () => {
+        toast.success("Product added!", {
+            position: "bottom-left",
+            autoClose: 1500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+        });
+    }
 
     const [ plushies, setPlushies ] = useState<Plushy[] | null>(null)
     const [ stickers, setStickers ] = useState<Sticker[] | null>(null)
@@ -103,11 +117,13 @@ const MerchList = () => {
 
     const handleAddToCart = (product: Plushy | Sticker) => {
         console.log("Adding product to cart:", product); 
-        addToCartHandler(product);  
+        addToCartHandler(product);
+        notify()  
     };
 
     return(
         <div>
+            <ToastContainer />
             <Title>Plushies</Title>
             <div>
                 {plushies.length > 0 && (
@@ -118,7 +134,9 @@ const MerchList = () => {
                                 <div>{plushy.name}</div>
                                 <div>{plushy.price} €</div>
                                 <div>In stock {plushy.stock}</div>
-                                <Button onClick={() => handleAddToCart(plushy)}>Add to Cart</Button>
+                                <div>
+                                    <Button onClick={() => handleAddToCart(plushy)}>Add to Cart</Button>
+                                </div>
                             </div>
                         ))}
                     </div>
