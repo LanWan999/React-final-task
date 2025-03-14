@@ -80,7 +80,7 @@ const DessertsForm: React.FC<DessertsFormProps> = (props) => {
                     <input type="text" name="description" id="description" value={description} onChange={descriptionHandler}/>
                 </div>
 
-                <button type='submit'>{editDessertData ? "Edit Dessert" : 'Add Dessert'}</button>
+                <button className='button-style' type='submit'>{editDessertData ? "Edit Dessert" : 'Add Dessert'}</button>
 
                 {formError && <p>{formError}</p>}
             </form>

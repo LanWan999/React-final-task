@@ -1,9 +1,9 @@
 import React from 'react'
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-// import './index.css'
+import './index.css'
 // import App from './App.jsx'
-import {BrowserRouter, Route, Routes} from 'react-router'
+import {BrowserRouter, Route, Routes, Navigate} from 'react-router'
 import HomePage from './pages/HomePage'
 import MenuPage from './pages/MenuPage'
 import MerchPage from './pages/MerchPage'
@@ -24,7 +24,7 @@ createRoot(document.getElementById('root')!).render(
       <CartPageContextProvider>
         <Routes>
           {/* <Route path='/' element={<App />}/> */}
-
+          <Route path="/" element={<Navigate to="/project/home" replace />} />
           <Route path='project'>
             <Route path='home' element={<HomePage />}/>
 

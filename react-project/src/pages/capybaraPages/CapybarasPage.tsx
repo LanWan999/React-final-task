@@ -1,11 +1,17 @@
 import React from 'react'
-import '../../CSS/galleryPage.css'
+import '../../CSS/capybarasPage.css'
 import NavigationBar from '../../components/NavigationBar'
 import axios from 'axios'
 import { API_URL } from "../../../config"
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router'
+import Footer from '../../components/Footer'
+import styled from 'styled-components'
 
+const Title = styled.h1`
+  font-size: 40px;
+  color: #574631;
+`;
 
 type Capybara = {
     id: number,
@@ -39,21 +45,24 @@ const CapybarasPage = () => {
     return(
         <div>
             <NavigationBar/>
-            <h1>Meet our Capybaras</h1>
+            <Title>Meet our Capybaras</Title>
             <div>
                 {capybaras.length > 0 && (
                     <div className='photo-card'>
                         {capybaras.map(capybara => (
                             <div key={capybara.id}>
                                 <img src={capybara.image} alt={capybara.name} />
-                                <Link to={`/project/capybaras/${capybara.id}`}>{capybara.name}</Link>
+                                <Link className='capybara-name' to={`/project/capybaras/${capybara.id}`}>
+                                    <div>{capybara.name}</div>
+                                </Link>
                             </div>
                         ))}
                     </div>
                 )}
             </div>
-
-            <Link to='/project/capybaras/create'>Add a Capybara</Link>
+            
+            <button className='capybara-button'><Link className='add-capybara-link' to='/project/capybaras/create'>Add a Capybara</Link></button>
+            <Footer />
         </div>
     )
 }

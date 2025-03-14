@@ -1,0 +1,42 @@
+.nav-list {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(58, 44, 7);
+}
+.nav-link:hover {
+    background-color: rgb(192, 132, 3);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.navigation-wrapper {
+    background-color: rgb(211, 136, 85);
+}
+
+.capybara-logo {
+    width: 70px;
+    border-radius: 50px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-links-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart-logo {
+    width: 30px;
+}
+

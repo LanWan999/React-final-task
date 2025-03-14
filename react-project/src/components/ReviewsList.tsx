@@ -2,6 +2,19 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 import { API_URL } from '../../config'
+import styled from 'styled-components'
+
+const Reviews = styled.div`
+  font-size: 15px;
+  color: #574631;
+  display: flex;
+  gap: 30px;
+`;
+
+const Username = styled.div`
+  font-size: 13px;
+  color: #574631ac;
+`;
 
 type Review = {
     id: string
@@ -35,15 +48,15 @@ const ReviewsList = () => {
         <div>
             <div>
                 {reviews.length > 0 && (
-                    <div className='review-list'>
+                    <Reviews className='review-list'>
                         {reviews.map(review => (
                             <div key={review.id}>
                                 <div>{review.body}</div>
                                 <div>{review.rating}</div>
-                                <div>{review.username}</div>
+                                <Username>{review.username}</Username>
                             </div>
                         ))}
-                    </div>
+                    </Reviews>
                 )}
             </div>
         </div>
