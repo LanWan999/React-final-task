@@ -3,6 +3,13 @@ import { useEffect, useState } from "react"
 import { Link } from "react-router"
 import { API_URL } from "../../../config"
 import NavigationBar from '../../components/NavigationBar'
+import Footer from '../../components/Footer'
+import styled from 'styled-components'
+
+const Title = styled.h1`
+  font-size: 40px;
+  color: #574631;
+`;
 
 interface Comment {
     id: string
@@ -28,19 +35,22 @@ function CommentsPage() {
     return(
         <div>
             <NavigationBar/>
-            <h1>Comments:</h1>
-
-            {comments.length > 0 && (
-                <ul>
-                    {comments.map(comment => 
-                        <li key={comment.username}>
-                            <Link to={`/project/comments/${comment.id}`}>{comment.body}.</Link>
-                        </li>
-                    )}
-                </ul>
-            )}
-            <Link to='/project/comments/create'>Add New Comment</Link>
-
+            <Title>Comments:</Title>
+            <div>
+                {comments.length > 0 && (
+                    <div>
+                        {comments.map(comment => 
+                            <div key={comment.username}>
+                                <Link to={`/project/comments/${comment.id}`}>{comment.body}.</Link>
+                            </div>
+                        )}
+                    </div>
+                )}
+            </div>
+            <div>
+                <Link to='/project/comments/create'>Add New Comment</Link>
+            </div>
+            <Footer />
         </div>
     )
 }

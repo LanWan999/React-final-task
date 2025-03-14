@@ -1,0 +1,58 @@
+.homepage-aboutUs-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cafe-image,
+.capybaras-bench,
+.coffee-cup {
+    width: 300px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.homepage-aboutUs-images .image-info-wrapper:nth-child(1) {
+    animation-delay: 0s; 
+}
+.homepage-aboutUs-images .image-info-wrapper:nth-child(2) {
+    animation-delay: 0.2s; 
+}
+.homepage-aboutUs-images .image-info-wrapper:nth-child(3) {
+    animation-delay: 0.4s; 
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+  
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.aboutUs-paragraph {
+    font-size: 17px;
+}
+
+.homePage-wrapper {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.image-info-wrapper {
+    display: flex;
+    gap: 20px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeIn 1s ease-in forwards;
+}
+
+footer {
+    background-color: rgb(211, 136, 85);
+    color:  hsl(208, 19%, 80%);
+    padding: 150px 80px 100px;
+    
+}

@@ -40,16 +40,18 @@ const DessertItem: React.FC<DessertItemProps> = (props) => {
     
 
     return (
-        <>
-            <h3>{name}</h3>
-            <img src={image} alt={name} />
-            <p>{price}</p>
-            <p>{description}</p>
+        <> 
+            <div className='dessert-card'>
+                <h3>{name}</h3>
+                <img className='dessert-image' src={image} alt={name} />
+                <p>Price: {price} €</p>
+                <p>{description}</p>
 
-            <button onClick={deleteHandler}>Delete</button>
-            <button onClick={() => getEditDessert(data)}>Edit</button>
+                <button className='button-style' onClick={deleteHandler}>Delete</button>
+                <button className='button-style' onClick={() => getEditDessert(data)}>Edit</button>
 
-            <button onClick={addNewDessertHandler}>Add New Dessert</button>
+                <button className='button-style' onClick={addNewDessertHandler}>Add New Dessert</button>
+            </div>
         </>
     )
 }

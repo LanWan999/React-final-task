@@ -2,6 +2,21 @@ import React from 'react'
 import {  useReducer } from "react"
 import { API_URL } from "../../config"
 import axios from "axios"
+import styled from 'styled-components'
+
+const FormSection = styled.div`
+  margin-bottom: 10px;
+  color: #574631;
+  display: flex;
+  flex-direction: column;
+`;
+
+const Button = styled.button`
+    background-color: rgb(228, 194, 120);
+    padding: 10px 10px;
+    border-radius: 6px;
+    font-size: 15px;
+`;
 
 const initialState = {
     username: '',
@@ -60,19 +75,19 @@ const ReviewForm = () => {
         <div>
             <div></div>
             <form onSubmit={submitHandler}>
-                <div className="form-control">
+                <FormSection className="form-control">
                     <label htmlFor="title">Username</label>
                     <input type="text" value={state.username} onChange={usernameHandler}/>
-                </div>
-                <div className="form-control">
+                </FormSection>
+                <FormSection className="form-control">
                     <label htmlFor="body">Body</label>
                     <textarea name="body" value={state.body} onChange={bodyHandler}></textarea>
-                </div>
-                <div className="form-control">
+                </FormSection>
+                <FormSection className="form-control">
                     <label htmlFor="user">Rating</label>
                     <input type="text" value={state.rating} onChange={ratingHandler}/>
-                </div>
-                <button type="submit">Submit</button>
+                </FormSection>
+                <Button type="submit">Submit</Button>
             
             </form>
         </div>

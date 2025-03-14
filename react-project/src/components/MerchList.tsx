@@ -2,6 +2,22 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { API_URL } from "../../config"
 import { useCart } from './cartComponents/CartContext'
+import styled from 'styled-components'
+
+const Button = styled.button`
+  color: #6d4d10;
+  font-size: 1em;
+  margin: 1em;
+  padding: 0.25em 1em;
+  border: 2px solid #c78e5f;
+  border-radius: 3px;
+`;
+
+
+const Title = styled.h1`
+  font-size: 30px;
+  color: #574631;
+`;
 
 type Plushy = {
     plushyId: string
@@ -72,10 +88,14 @@ const MerchList = () => {
         return <div>No stickers found</div>
     }
 
+    const isPlushy = (product: Plushy | Sticker): product is Plushy => {
+        return (product as Plushy).plushyId !== undefined;
+    };
+
     const addToCartHandler = (product: Plushy | Sticker) => {
         const cartProduct = {
             ...product,
-            id: 'plushyId' in product ? product.plushyId : product.stickerId,
+            id: isPlushy(product) ? product.plushyId : product.stickerId,
             quantity: 1,
         }
         addProduct(cartProduct)
@@ -88,7 +108,7 @@ const MerchList = () => {
 
     return(
         <div>
-            <h1>Plushies</h1>
+            <Title>Plushies</Title>
             <div>
                 {plushies.length > 0 && (
                     <div className='photo-card'>
@@ -98,13 +118,13 @@ const MerchList = () => {
                                 <div>{plushy.name}</div>
                                 <div>{plushy.price} €</div>
                                 <div>In stock {plushy.stock}</div>
-                                <button onClick={() => handleAddToCart(plushy)}>Add to Cart</button>
+                                <Button onClick={() => handleAddToCart(plushy)}>Add to Cart</Button>
                             </div>
                         ))}
                     </div>
                 )}
             </div>
-            <h1>Stickers</h1>
+            <Title>Stickers</Title>
             <div>
                 {stickers.length > 0 && (
                     <ul className='photo-card'>
@@ -114,7 +134,7 @@ const MerchList = () => {
                                 <div>{sticker.name}</div>
                                 <div>{sticker.price} €</div>
                                 <div>In stock {sticker.stock}</div>
-                                <button onClick={() => handleAddToCart(sticker)}>Add to Cart</button>
+                                <Button onClick={() => handleAddToCart(sticker)}>Add to Cart</Button>
                             </li>
                         ))}
                     </ul>

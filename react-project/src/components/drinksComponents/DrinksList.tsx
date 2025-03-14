@@ -52,11 +52,11 @@ const DrinksList = () => {
         <div>
             {drinks.length > 0 ? (
                 drinks.map((drink) => (
-                <div key={drink.id}>
-                    <img src={drink.image} alt={drink.name} />
+                <div className='drink-card' key={drink.id}>
+                    <img  className='drink-image' src={drink.image} alt={drink.name} />
                     <h3>{drink.name}</h3>
                     <p>{drink.description}</p>
-                    <p>${drink.price}</p>
+                    <p>Price: {drink.price} €</p>
                 </div>
                 ))
             ) : (

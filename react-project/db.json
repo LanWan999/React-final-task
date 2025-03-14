@@ -34,17 +34,17 @@
   "desserts": [
     {
       "image": "/assets/sorbey.jpg",
-      "name": "Strawberry Milkshake",
+      "name": "Strawberry Sorbey",
       "price": 4,
       "description": "Dessert 1",
       "id": "1"
     },
     {
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0qFJ-Hrl6oQlLCfM-5Xe8cewwliLYG5F0sw&s",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM6KeYSdHnB66ZtEQu7wjjghWT7YRd9K4ZLw&s",
       "name": "Waffles",
       "price": 6,
       "description": "Waffles with Berries",
-      "id": "1741890190793"
+      "id": "1741951966982"
     }
   ],
   "drinks": [
@@ -65,28 +65,28 @@
   ],
   "plushies": [
     {
-      "id": "1",
+      "plushyId": "1",
       "name": "Capybara Toast",
       "image": "/assets/plushyToastCapybara.jpg",
       "price": 13,
       "stock": 5
     },
     {
-      "id": "2",
+      "plushyId": "2",
       "name": "Capybara Rabbit",
       "image": "/assets/plushyRabbitCapybara.webp",
       "price": 18,
       "stock": 6
     },
     {
-      "id": "3",
+      "plushyId": "3",
       "name": "Capybara with a Duck Floaty",
       "image": "/assets/plushyDuckCapybara.jpg",
       "price": 14,
       "stock": 3
     },
     {
-      "id": "4",
+      "plushyId": "4",
       "name": "Capybara with a Tulip",
       "image": "/assets/plushyTulipCapybara.webp",
       "price": 13,
@@ -95,21 +95,21 @@
   ],
   "stickers": [
     {
-      "id": "1",
+      "stickerId": "7",
       "name": "Chill capibara",
       "image": "/assets/capybaraStickerLeaves.webp",
       "price": 3,
       "stock": 12
     },
     {
-      "id": "2",
+      "stickerId": "8",
       "name": "Capybara relaxing in a tub",
       "image": "/assets/capybaraStickerTub.jpg",
       "price": 5,
       "stock": 26
     },
     {
-      "id": "3",
+      "stickerId": "9",
       "name": "Capybara with bubble tea",
       "image": "/assets/capybaraStickerBubbletea.webp",
       "price": 3,
@@ -146,6 +146,12 @@
       "body": "Good quality, good material",
       "rating": "9/10",
       "id": "H9IWTaH"
+    },
+    {
+      "username": "OnTheMove123",
+      "body": "I recently purchased a plushy and a sticker, and I'm super happy with both!",
+      "rating": "10/10",
+      "id": "0uHM2f9"
     }
   ],
   "comments": [
