@@ -56,3 +56,9 @@ footer {
     padding: 150px 80px 100px;
     
 }
+
+@media (max-width: 999px) {
+    .image-info-wrapper {
+        display: block;
+    }
+}

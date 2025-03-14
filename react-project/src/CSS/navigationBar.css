@@ -40,3 +40,16 @@
     width: 30px;
 }
 
+@media (max-width: 600px) {
+    .cafe-name,
+    .nav-item-home {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .capybara-logo,
+    .nav-item-home {
+        display: none;
+    }
+}

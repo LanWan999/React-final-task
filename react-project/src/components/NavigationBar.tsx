@@ -11,10 +11,10 @@ const NavigationBar = () => {
                         <NavLink to="/project/home" end>
                             <img className='capybara-logo' src="https://cdn.pixabay.com/photo/2022/05/03/23/12/animal-7172825_1280.png" alt="" />
                         </NavLink>
-                        <div>Desserts & Capybaras</div>
+                        <div className='cafe-name'>Desserts & Capybaras</div>
                     </div>
                     <div className="nav-list">
-                        <div className="nav-item">
+                        <div className="nav-item-home">
                             <NavLink className='nav-link' to="/project/home" end>Home</NavLink>
                         </div>
                         <div className="nav-item">

@@ -45,6 +45,13 @@
       "price": 6,
       "description": "Waffles with Berries",
       "id": "1741951966982"
+    },
+    {
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-MXXBnTvd-T5wcW1avw0rOmLYBzOQB3N4Iw&s",
+      "name": "Banana Milkshake",
+      "price": 4,
+      "description": "From real bananas",
+      "id": "1741980488747"
     }
   ],
   "drinks": [
